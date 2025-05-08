@@ -2,16 +2,16 @@ package model;
 
 public class Tile {
     private TileType type;
-    private int elevation;
+    private int height;
     private int distanceToObstacle;
-    private int x, y;
+    private int x_axis, y_axis;
 
-    public Tile(TileType type, int elevation, int x, int y) 
+    public Tile(TileType type, int elevation, int x_axis, int y_axis) 
     {
         this.type = type;
-        this.elevation = elevation;
-        this.x = x;
-        this.y = y;
+        this.height = elevation;
+        this.x_axis = x_axis;
+        this.y_axis = y_axis;
         this.distanceToObstacle = -1; //////////// 
     }
 
@@ -20,7 +20,7 @@ public class Tile {
     }
 
     public int getElevation() {
-        return elevation;
+        return height;
     }
 
     public int getDistanceToObstacle() {
@@ -32,10 +32,10 @@ public class Tile {
     }
 
     public int getX() {
-        return x;
+        return x_axis;
     }
 
     public int getY() {
-        return y;
+        return y_axis;
     }
 }
